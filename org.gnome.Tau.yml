@@ -21,7 +21,5 @@ modules:
     buildsystem: meson
     sources:
       - type: archive
-        url: https://gitlab.gnome.org/World/Tau/uploads/a39620a6da11c81f3a3ee8279bb7b76d/tau-0.9.1.tar.xz
-        sha256: 199dfdb3c68bd39b4dfe378d05cf07385fd100698037406b37ac2eb34ce08ace
-      - type: patch
-        path: 0001-chore-appdata-add-OARS-content-rating.patch
+        url: https://gitlab.gnome.org/World/Tau/uploads/fdf09640e3837ad509f5c4b1da0c26e3/tau-0.9.2.tar.xz
+        sha256: e48db7356bf72d7082cab4ed09522e1d26eb682593881cf07b3a717160a0501d
