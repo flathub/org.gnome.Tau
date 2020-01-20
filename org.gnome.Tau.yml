@@ -13,9 +13,24 @@ build-options:
   append-path: /usr/lib/sdk/rust-stable/bin
   env: { CARGO_HOME: "/run/build/Tau/cargo", RUST_BACKTRACE: "1" }
 modules:
+  - name: libhandy
+    buildsystem: meson
+    config-opts:
+      - -Dprofiling=false
+      - -Dintrospection=enabled
+      - -Dgtk_doc=false
+      - -Dtests=false
+      - -Dexamples=false
+      - -Dvapi=false
+      - -Dglade_catalog=disabled
+    sources:
+      - type: archive
+        url: https://source.puri.sm/Librem5/libhandy/-/archive/v0.0.13/libhandy-v0.0.13.tar.gz
+        sha256: 138bec94e66d15a7a19350b65845d4529bcd969ea913ab3eb438f56fe47d5d37
+
   - name: Tau
     buildsystem: meson
     sources:
       - type: archive
-        url: https://gitlab.gnome.org/World/Tau/uploads/375ce054c0bc98e0c1a3e95fdcd4e46c/tau-0.9.3.tar.xz
-        sha256: e58b400e86fb7dd1a6610427732a6a360355e8f3b03712d518fb5438b6daae0b
+        url: https://gitlab.gnome.org/World/Tau/uploads/d7d7fc22a851466768edeace0f3d6b1b/tau-0.10.2.tar.xz
+        sha256: 14551674458d1011cfb06152313b1be647aa4e47a8278f8fde57a754a05206b3
