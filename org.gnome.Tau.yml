@@ -28,9 +28,21 @@ modules:
         url: https://source.puri.sm/Librem5/libhandy/-/archive/v0.0.13/libhandy-v0.0.13.tar.gz
         sha256: 138bec94e66d15a7a19350b65845d4529bcd969ea913ab3eb438f56fe47d5d37
 
+  - name: vte2.91
+    buildsystem: meson
+    config-opts:
+      - -Ddocs=false
+      - -Dvapi=false
+    build-options:
+      env: { CXXFLAGS: "-fno-exceptions" }
+    sources:
+      - type: archive
+        url: https://download.gnome.org/sources/vte/0.60/vte-0.60.1.tar.xz
+        sha256: 5e25807233f8a7e15204be7ff694bbcf6facbb0136092b5ba12584a7b70cf0c4
+
   - name: Tau
     buildsystem: meson
     sources:
       - type: archive
-        url: https://gitlab.gnome.org/World/Tau/uploads/d7d7fc22a851466768edeace0f3d6b1b/tau-0.10.2.tar.xz
-        sha256: 14551674458d1011cfb06152313b1be647aa4e47a8278f8fde57a754a05206b3
+        url: https://gitlab.gnome.org/World/Tau/uploads/d996fe7fde3aa0960520e418e3396a32/tau-0.11.1.tar.xz
+        sha256: ac57b6dac406b1298c0458eeb17c496571fdcf5fede5d6e20edc1f1fd5a54757
