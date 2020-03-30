@@ -44,5 +44,5 @@ modules:
     buildsystem: meson
     sources:
       - type: archive
-        url: https://gitlab.gnome.org/World/Tau/uploads/9318c8b4bb67b6fff59858f5d45bc4bb/tau-0.11.2.tar.xz
-        sha256: f1b7e8eb3fbec5f0a610a70ebd72a6a08ff63a37daf88f27d1c015572a6aedf4
+        url: https://gitlab.gnome.org/World/Tau/uploads/b5f24cd692ec0c2a2c2be460fffaf505/tau-0.11.3.tar.xz
+        sha256: 36e915de4ca906599b4ad176d4e2d625b454801a09ca0d4b0a1fbaf14915e60e
