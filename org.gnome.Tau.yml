@@ -34,15 +34,15 @@ modules:
       - -Ddocs=false
       - -Dvapi=false
     build-options:
-      env: { CXXFLAGS: "-fno-exceptions" }
+      env: { CXXFLAGS: "-fexceptions" }
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/vte/0.60/vte-0.60.1.tar.xz
-        sha256: 5e25807233f8a7e15204be7ff694bbcf6facbb0136092b5ba12584a7b70cf0c4
+        url: https://download.gnome.org/sources/vte/0.62/vte-0.62.3.tar.xz
+        sha256: f5770285a52cc23a3c0428a43d492b7c0ba458ce7b8a73768a7d4f1e8a7db3b4
 
   - name: Tau
     buildsystem: meson
     sources:
       - type: archive
-        url: https://gitlab.gnome.org/World/Tau/uploads/b5f24cd692ec0c2a2c2be460fffaf505/tau-0.11.3.tar.xz
-        sha256: 36e915de4ca906599b4ad176d4e2d625b454801a09ca0d4b0a1fbaf14915e60e
+        url: https://gitlab.gnome.org/World/Tau/uploads/14037a7f98f475d2497b74bd74a0430e/tau-0.12.0.tar.xz
+        sha256: a14e4c3511fa51cc051c33ad04a3989b93c6aa2405e8b0f5ac05970fe5d95449
