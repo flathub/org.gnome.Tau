@@ -37,8 +37,8 @@ modules:
       env: { CXXFLAGS: "-fexceptions" }
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/vte/0.62/vte-0.62.3.tar.xz
-        sha256: f5770285a52cc23a3c0428a43d492b7c0ba458ce7b8a73768a7d4f1e8a7db3b4
+        url: https://download.gnome.org/sources/vte/0.64/vte-0.64.2.tar.xz
+        sha256: 2b3c820b65a667c1d8859ba20478be626d1519cc3159dac25f703330c6d07e18
 
   - name: Tau
     buildsystem: meson
