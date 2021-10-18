@@ -6,6 +6,7 @@ sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
 command: tau
 finish-args:
+  - --device=dri
   - --share=ipc
   - --socket=x11
   - --socket=wayland
